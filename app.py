@@ -46,10 +46,6 @@ footer {
     visibility: hidden;
 }
 
-/* Hide toolbar (three dots in some versions) */
-[data-testid="stToolbar"] {
-    display: none;
-}
 </style>
 """, unsafe_allow_html=True)
 
@@ -1157,3 +1153,4 @@ if __name__ == "__main__":
     main()
 
     
+
