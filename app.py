@@ -26,7 +26,32 @@ from crewai import Agent, Task, Crew, Process
 from typing import List, Dict, Optional
 from crewai.tools import tool
 
+# =====================================================
+# HIDE STREAMLIT DEFAULT UI (HEADER / SHARE / MENU)
+# =====================================================
+st.markdown("""
+<style>
+/* Encourage full-width layout */
+.block-container {
+    padding-top: 1rem;
+}
 
+/* Hide Streamlit header (Share, GitHub, Menu) */
+header {
+    visibility: hidden;
+}
+
+/* Hide footer */
+footer {
+    visibility: hidden;
+}
+
+/* Hide toolbar (three dots in some versions) */
+[data-testid="stToolbar"] {
+    display: none;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # ==================== LANGGRAPH AGENT CONFIGURATION ====================
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -1130,4 +1155,5 @@ def main():
         
 if __name__ == "__main__":
     main()
+
     
