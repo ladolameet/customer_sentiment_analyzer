@@ -32,10 +32,6 @@ from crewai.tools import tool
 st.markdown("""
 <style>
 /* Encourage full-width layout */
-.block-container {
-    padding-top: 1rem;
-}
-
 /* Hide Streamlit header (Share, GitHub, Menu) */
 header {
     visibility: hidden;
@@ -1153,4 +1149,5 @@ if __name__ == "__main__":
     main()
 
     
+
 
