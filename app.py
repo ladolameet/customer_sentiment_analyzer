@@ -32,10 +32,6 @@ from crewai.tools import tool
 st.markdown("""
 <style>
 /* Encourage full-width layout */
-/* Hide Streamlit header (Share, GitHub, Menu) */
-header {
-    visibility: hidden;
-}
 
 /* Hide footer */
 footer {
@@ -1149,5 +1145,6 @@ if __name__ == "__main__":
     main()
 
     
+
 
 
